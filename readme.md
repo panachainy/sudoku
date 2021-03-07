@@ -10,7 +10,7 @@
 
 ### Source to VENV
 
-`./source.sh`
+`source ./venv/bin/activate`
 
 ## Credit
 
