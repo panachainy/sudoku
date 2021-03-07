@@ -3,8 +3,6 @@ from random_number import get_random_number
 
 
 def get_new_board():
-    new_value = 1
-
     board_temp = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -21,13 +19,17 @@ def get_new_board():
 
     for y in range(9):
         for x in range(9):
-            new_value = get_random_number(0, 10)
-            if is_correct(board_temp, new_value, x, y):
-                board_temp[x][y] = new_value
+            # warning: beware infinite loop
+            while True:
+                new_value = get_random_number(0, 10)
+                if is_correct(board_temp, new_value, x, y):
+                    board_temp[x][y] = new_value
+                    break
 
     print(board_temp)
     # TODO: change print to return board_temp after done logic
     # return board_temp
+
 
 def is_correct(board_temp, new_value, x, y):
     return True
