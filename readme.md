@@ -10,7 +10,7 @@
 
 ### Source to VENV
 
-`source.sh`
+`./source.sh`
 
 ## Credit
 
