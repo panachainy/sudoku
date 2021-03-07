@@ -1,8 +1,9 @@
 from random import seed
 from random import randint
+from datetime import date
 
 # seed random number generator
-seed(1)
+seed(date.today())
 
 
 def get_random_number(start, end):
