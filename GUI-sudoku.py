@@ -8,7 +8,7 @@ pygame.font.init()
 
 class Grid:
     # To change the starting board change this
-    board = []
+    board = None
 
     def __init__(self, rows, cols, width, height):
 
