@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=AdUZArA-kZw
 
 ### Download dependency
 
+pip install auto-py-to-exe
+
 `pip3 install pygame`
 `pip3 install solver`
 
@@ -25,7 +27,7 @@ https://www.youtube.com/watch?v=AdUZArA-kZw
 ### use freeze
 
 pip install -r requirements.txt --no-index --find-links file:///tmp/packages
-pip install -r requirements.txt
+
 
 ### VENV
 
